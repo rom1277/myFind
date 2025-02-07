@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 )
 
-func basis(path string, d, f, sl bool, ext string) error {
+func myFind(path string, d, f, sl bool, ext string) error {
 	dir, err := os.Open(path)
 	if err != nil {
 		return err
@@ -27,7 +27,7 @@ func basis(path string, d, f, sl bool, ext string) error {
 				fmt.Printf("Dir: %s\n", fullPath)
 
 			}
-			if err = basis(fullPath, d, f, sl, ext); err != nil {
+			if err = myFind(fullPath, d, f, sl, ext); err != nil {
 				return err
 			}
 		}

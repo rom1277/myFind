@@ -43,7 +43,7 @@ func main() {
 	}
 	path := flag.Arg(0)
 
-	if err := basis(path, d, f, sl, ext); err != nil {
+	if err := myFind(path, d, f, sl, ext); err != nil {
 		fmt.Println(err)
 	}
 }
