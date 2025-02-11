@@ -1,7 +1,5 @@
 # Myfind
 
-## Contents
-<h3 id="ex00">Exercise 00: Finding Things</h3>
 As a first step,
 As a first step, let's implement a `find`-like utility using Go. It needs to take a path and a set of command line options to be able to find different types of entries. We are interested in three types of entries, which are directories, regular files and symbolic links. So we should be able to run our program as follows:
 
